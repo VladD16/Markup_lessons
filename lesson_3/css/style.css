@@ -13,6 +13,12 @@
 .main__introduction {
   color: darkred;
 }
+.main__history ol {
+  color: darkblue;
+}
+.main__people ol {
+  color: darkmagenta;
+}
 
 .block__title {
   color: red;
