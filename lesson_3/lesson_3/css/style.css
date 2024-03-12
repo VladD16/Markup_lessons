@@ -1,0 +1,26 @@
+@import url(reset.css);
+
+.header__title {
+  color: red;
+}
+.header__info {
+  color: darkred;
+}
+.header__list {
+  color: blueviolet;
+}
+
+.main__introduction {
+  color: darkred;
+}
+
+.block__title {
+  color: red;
+}
+.block__list {
+  color: darkcyan;
+}
+
+.footer__info {
+  color: darkred;
+}
