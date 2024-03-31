@@ -1,0 +1,87 @@
+/*Шрифти*/
+
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+
+/*Локальні шрифти*/
+
+@import url(fonts.css);
+
+/********************************/
+
+/*Обнулення*/
+
+@import url(reset.css);
+
+/********************************/
+
+body {
+  font-family: "Exo", sans-serif;
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: rgba(128, 128, 128, 0.4);
+}
+
+/********************************/
+
+.header__header {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(183, 34, 34);
+  border-radius: 50px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0px 30px 0px;
+  box-shadow: inset 0px 0px 30px red;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+/***********************************/
+
+.main__page {
+  padding: 40px;
+  border-radius: 40px;
+  box-shadow: inset 0px 0px 20px red;
+  margin-bottom: 30px;
+}
+.main__page p {
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main__page p:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+.main__page img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.main__page div:not(:last-child) {
+  margin-bottom: 20px;
+}
+.image img {
+  max-width: 600px;
+}
+.main__page h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+/*********************************/
+
+.footer__footer {
+  color: rgb(183, 34, 34);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+.footer__footer a {
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 15px red;
+}
