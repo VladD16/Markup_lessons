@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 10</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a class="header__btn-catalog" href="#catalog">
+          <span>Каталог</span>
+        </a>
+        <div class="header__title">
+          <h1>
+            CSS позиціонування
+          </h1>
+        </div>
+        <div class="header__catalog catalog" id="catalog">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img src="img/icons/catalog-1.svg" alt="icon">
+                <span>Ліжка</span>
+              </a>
+              <div class="sub-catalog">
+                <ul class="sub-catalog__list">
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Односпальні ліжка</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Двоспальні ліжка</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img src="img/icons/catalog-2.svg" alt="icon">
+                <span>Матраци</span>
+              </a>
+              <div class="sub-catalog">
+                <ul class="sub-catalog__list">
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Односпальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Двоспальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Bonnel</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img src="img/icons/catalog-3.svg" alt="icon">
+                <span>М’які меблі</span>
+              </a>
+              <div class="sub-catalog">
+                <ul class="sub-catalog__list">
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Односпальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Двоспальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Bonnel</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Безпружинні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Безпружинні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Безпружинні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Безпружинні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Безпружинні матраци</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img src="img/icons/catalog-4.svg" alt="icon">
+                <span>Шафи</span>
+              </a>
+              <div class="sub-catalog">
+                <ul class="sub-catalog__list">
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Односпальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Двоспальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Bonnel</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Безпружинні матраци</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img src="img/icons/catalog-5.svg" alt="icon">
+                <span>Комоди</span>
+              </a>
+              <div class="sub-catalog">
+                <ul class="sub-catalog__list">
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Односпальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Bonnel</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Безпружинні матраци</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img src="img/icons/catalog-6.svg" alt="icon">
+                <span>Тумби</span>
+              </a>
+              <div class="sub-catalog">
+                <ul class="sub-catalog__list">
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Односпальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Двоспальні матраци</a>
+                  </li>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img src="img/icons/catalog-7.svg" alt="icon">
+                <span>Столи</span>
+              </a>
+              <div class="sub-catalog">
+                <ul class="sub-catalog__list">
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Односпальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Двоспальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Безпружинні матраци</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img src="img/icons/catalog-8.svg" alt="icon">
+                <span>Стільці</span>
+              </a>
+              <div class="sub-catalog">
+                <ul class="sub-catalog__list">
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Двоспальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Bonnel</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Безпружинні матраци</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img src="img/icons/catalog-9.svg" alt="icon">
+                <span>Меблеві стіни</span>
+              </a>
+              <div class="sub-catalog">
+                <ul class="sub-catalog__list">
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Односпальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Двоспальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Bonnel</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img src="img/icons/catalog-10.svg" alt="icon">
+                <span>Кухні</span>
+              </a>
+              <div class="sub-catalog">
+                <ul class="sub-catalog__list">
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Односпальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Двоспальні матраци</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Пружинний блок Pocket Spring</a>
+                  </li>
+                  <li class="sub-catalog__item">
+                    <a href="#" class="sub-catalog__link">Безпружинні матраци</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <div class="page__container">
+        <a href="#" class="page__button-up">
+          <span>на початок</span>
+        </a>
+        <div class="page__text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptates fuga voluptatem ducimus
+            laudantium culpa unde id, error, iure fugit repudiandae ab accusantium. Vitae totam, culpa, accusamus
+            reprehenderit nesciunt inventore quidem repudiandae minima maiores voluptates velit dignissimos quibusdam
+            odit
+            recusandae tempore facilis veritatis! Laudantium doloremque, temporibus culpa, mollitia, asperiores modi
+            voluptatum at quo eius explicabo vel delectus perferendis ullam vitae! Sequi, quo? Reprehenderit est
+            laudantium, incidunt nulla veniam, esse id fugit itaque voluptatum consectetur corporis, eveniet debitis
+            doloribus quisquam recusandae assumenda! Modi, nam? Voluptatibus maxime dolorum voluptas consectetur ab
+            dicta
+            exercitationem voluptatem blanditiis nihil soluta? Dolore odit vitae odio quam error expedita illum ad
+            molestias amet beatae earum, eos esse blanditiis minus alias sequi non obcaecati maxime voluptates
+            perferendis
+            culpa voluptatibus voluptatum. Animi sint temporibus ea amet assumenda reiciendis iure, quos delectus
+            aperiam,
+            recusandae vel esse quaerat velit? Esse earum deserunt tempora adipisci quidem in! Nesciunt incidunt
+            voluptate
+            excepturi? Libero cumque assumenda, magni veniam non deleniti magnam voluptatem autem sint. Vitae atque
+            repudiandae excepturi libero hic! Reiciendis, natus libero accusantium pariatur dolor distinctio, esse ut,
+            id
+            veritatis mollitia odio molestiae porro quisquam adipisci voluptatem at magni excepturi inventore quibusdam
+            nesciunt architecto. Asperiores, perspiciatis modi beatae quis voluptatum culpa ipsam facilis, omnis
+            dignissimos dolore aliquam natus? Nobis eius iusto inventore, quo, deserunt voluptatem cupiditate reiciendis
+            doloribus omnis aspernatur iure modi delectus vitae quae obcaecati saepe eaque voluptatibus aperiam cumque
+            dolorum itaque. Delectus qui enim in consequatur quaerat autem quam, ea mollitia. Sit, est molestias
+            inventore
+            suscipit maxime aspernatur. Rerum hic iusto harum numquam alias. Nulla dicta voluptatem, suscipit, expedita
+            voluptatum eos voluptas, impedit esse cupiditate nihil dolorum similique doloremque iusto quasi sequi ipsam!
+            Laboriosam reiciendis harum rem quia, modi incidunt. Illo, et nisi libero error saepe asperiores natus minus
+            commodi nihil. Deleniti voluptatibus laudantium quos cumque? Qui tenetur earum accusamus. Expedita, debitis
+            quia ex dolore sit asperiores dolorum, in sequi culpa porro laborum sint, reprehenderit at quasi! Culpa
+            obcaecati similique hic eligendi eveniet explicabo. Sit itaque quia beatae officiis suscipit, cupiditate
+            pariatur? Sunt vel, eveniet sapiente odit ducimus voluptatum, tempore nihil, quas neque numquam voluptate
+            itaque saepe provident omnis? Nesciunt ad quis optio, repellendus voluptatem obcaecati minima dolorem modi
+            reprehenderit perferendis doloribus odit facilis dolorum voluptate quos amet mollitia! Rem quod ut repellat
+            eos tempore totam similique dolor? Voluptatibus autem reiciendis nobis odit quod blanditiis ullam, impedit
+            magni error quisquam incidunt debitis culpa repellat minus vero facilis, possimus deleniti similique
+            cupiditate tenetur dolorum! Neque repellendus corrupti natus impedit vero facere voluptate doloribus
+            accusantium ad. Est aspernatur enim debitis laboriosam recusandae dignissimos aliquam nihil necessitatibus
+            at
+            molestiae neque quo fuga corporis rerum maiores doloremque illo assumenda similique nesciunt, quae dicta
+            fugiat iste? Magni explicabo dignissimos repudiandae adipisci ipsum, sit dicta voluptates temporibus ab
+            beatae
+            vero molestias? Nemo odit labore laborum laboriosam eveniet minus, amet tempore est culpa totam perferendis
+            vel dolor voluptatum quam eius magnam alias earum placeat, ullam libero fugiat officiis. Quo similique
+            aperiam
+            libero, expedita dolor veritatis rerum. Provident at suscipit cum, assumenda dolorum dolor ipsam in rem
+            excepturi repudiandae? Nisi numquam debitis ipsa doloribus magni voluptatum odit, illum, voluptate, esse et
+            inventore cum aut amet sunt asperiores in minima? Quas repudiandae magni velit ea. Excepturi earum a
+            repellendus repellat perferendis debitis, tenetur commodi, itaque, laboriosam molestias optio? Officia
+            dolorem
+            error provident, ut voluptate dignissimos hic sed dolore itaque voluptatum officiis dicta aut. Saepe rem
+            alias
+            ex nobis quod delectus nihil assumenda quis eaque ab est omnis enim laudantium modi sunt natus, odit
+            voluptatibus qui quae earum unde pariatur quibusdam obcaecati! Explicabo, rem suscipit ratione quos ipsum
+            quidem nisi et nihil unde laborum animi repudiandae vel iste repellendus a dolor aspernatur, assumenda
+            numquam
+            at sapiente velit labore sed quam culpa? Consequuntur in atque obcaecati itaque similique a debitis, error
+            necessitatibus, ex quia accusamus nostrum veritatis odio ratione possimus nulla! Soluta, reiciendis beatae
+            ullam voluptatibus maiores voluptatum modi reprehenderit sint sapiente corrupti? Voluptate atque alias
+            recusandae possimus ad quas libero fugiat, soluta in praesentium debitis? Omnis esse quae qui ad cupiditate.
+            Est nisi at voluptate obcaecati ut esse sit. Ratione facilis est iusto sint fugiat deserunt ducimus illo,
+            error at animi, iste natus voluptate recusandae repudiandae ut commodi distinctio! Ducimus, voluptatem
+            soluta.
+            Amet sit molestiae ex maxime hic vitae, debitis nostrum laborum et quos voluptas exercitationem porro cumque
+            distinctio illum corporis aspernatur aliquid neque consectetur magni iusto atque? Enim, ut. Ab, ratione
+            quibusdam. Provident sunt corrupti quas commodi fuga possimus minima, labore accusamus odit ipsa expedita
+            libero quo voluptatum tempora reprehenderit, minus suscipit esse totam vel quod ipsam voluptates laudantium.
+            Quisquam porro delectus ea qui dicta consequatur fuga quidem nostrum quae ex dolorem voluptates laboriosam
+            necessitatibus dolores enim pariatur aliquam, nulla modi adipisci fugit ratione error dolor similique.
+            Veniam,
+            eligendi id nobis dolorem sequi dolore explicabo facilis quaerat? Cupiditate est laudantium, provident autem
+            rem aliquam accusantium dignissimos. Impedit recusandae odio at suscipit sequi architecto, ipsa dolore
+            expedita ad adipisci autem blanditiis deleniti minus aspernatur totam enim. Hic neque dignissimos eos
+            pariatur
+            nulla ut asperiores ratione ea impedit quae. Deserunt iusto fugiat, amet consequatur molestias
+            necessitatibus
+            aliquam nam atque natus placeat repellat, sunt eligendi hic facere et cupiditate perferendis soluta. Odio
+            tempora ad odit iste cum hic reprehenderit ullam quam debitis dolore, perspiciatis aspernatur, illum autem
+            laudantium eaque expedita animi praesentium placeat alias saepe voluptatem accusantium quae! Alias eligendi
+            quos dolorum velit aspernatur dolores quia recusandae illum vel ipsam optio cumque reiciendis rerum officiis
+            eaque dolore non assumenda laborum consequuntur, suscipit totam sed! Perspiciatis nesciunt dolore magnam
+            adipisci, delectus vel, neque accusantium enim tempore officiis, iusto ex dolorem dolores. Non nam aut unde,
+            necessitatibus maxime odit? Aut magni natus, voluptatum cumque nemo voluptatibus et nobis nam culpa animi
+            repellendus, non at ea deserunt voluptatem quasi quidem maiores libero recusandae nisi consequuntur ducimus
+            sed assumenda. Incidunt similique iusto veritatis est illo recusandae, hic vel modi quas ducimus dicta
+            consequatur pariatur illum, quidem repudiandae atque unde earum vero quam? Necessitatibus debitis quae
+            laborum, illum tempore dignissimos nulla commodi iste laudantium voluptate illo vero, aperiam cum libero
+            recusandae quasi quis aliquam facilis maxime! Modi, corrupti?
+          </p>
+        </div>
+        <div class="page__categories categories">
+          <div class="categories__title">
+            <h2>
+              Популярні категорії
+            </h2>
+          </div>
+          <div class="categories__cards">
+            <div class="categories__card card">
+              <a href="#" class="card__content">
+                <div class="card__title">
+                  <h3>
+                    Ліжка
+                  </h3>
+                </div>
+                <div class="card__number">54</div>
+                <div class="card__image">
+                  <img src="img/bed.webp" alt="photo bed">
+                </div>
+              </a>
+            </div>
+            <div class="categories__card card">
+              <a href="#" class="card__content">
+                <div class="card__title">
+                  <h3>
+                    Ліжка
+                  </h3>
+                </div>
+                <div class="card__number">54</div>
+                <div class="card__image">
+                  <img src="img/bed.webp" alt="photo bed">
+                </div>
+              </a>
+            </div>
+            <div class="categories__card card">
+              <a href="#" class="card__content">
+                <div class="card__title">
+                  <h3>
+                    Ліжка
+                  </h3>
+                </div>
+                <div class="card__number">54</div>
+                <div class="card__image">
+                  <img src="img/bed.webp" alt="photo bed">
+                </div>
+              </a>
+            </div>
+            <div class="categories__card card">
+              <a href="#" class="card__content">
+                <div class="card__title">
+                  <h3>
+                    Ліжка
+                  </h3>
+                </div>
+                <div class="card__number">54</div>
+                <div class="card__image">
+                  <img src="img/bed.webp" alt="photo bed">
+                </div>
+              </a>
+            </div>
+            <div class="categories__card card">
+              <a href="#" class="card__content">
+                <div class="card__title">
+                  <h3>
+                    Ліжка
+                  </h3>
+                </div>
+                <div class="card__number">54</div>
+                <div class="card__image">
+                  <img src="img/bed.webp" alt="photo bed">
+                </div>
+              </a>
+            </div>
+            <div class="categories__card card">
+              <a href="#" class="card__content">
+                <div class="card__title">
+                  <h3>
+                    Ліжка
+                  </h3>
+                </div>
+                <div class="card__number">54</div>
+                <div class="card__image">
+                  <img src="img/bed.webp" alt="photo bed">
+                </div>
+              </a>
+            </div>
+            <div class="categories__card card">
+              <a href="#" class="card__content">
+                <div class="card__title">
+                  <h3>
+                    Ліжка
+                  </h3>
+                </div>
+                <div class="card__number">54</div>
+                <div class="card__image">
+                  <img src="img/bed.webp" alt="photo bed">
+                </div>
+              </a>
+            </div>
+            <div class="categories__card card">
+              <a href="#" class="card__content">
+                <div class="card__title">
+                  <h3>
+                    Ліжка
+                  </h3>
+                </div>
+                <div class="card__number">54</div>
+                <div class="card__image">
+                  <img src="img/bed.webp" alt="photo bed">
+                </div>
+              </a>
+            </div>
+            <div class="categories__card card">
+              <a href="#" class="card__content">
+                <div class="card__title">
+                  <h3>
+                    Ліжка
+                  </h3>
+                </div>
+                <div class="card__number">54</div>
+                <div class="card__image">
+                  <img src="img/bed.webp" alt="photo bed">
+                </div>
+              </a>
+            </div>
+            <div class="categories__card card">
+              <a href="#" class="card__content">
+                <div class="card__title">
+                  <h3>
+                    Ліжка
+                  </h3>
+                </div>
+                <div class="card__number">54</div>
+                <div class="card__image">
+                  <img src="img/bed.webp" alt="photo bed">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <span>я футер</span>
+    </footer>
+  </div>
+</body>
+
+</html>
