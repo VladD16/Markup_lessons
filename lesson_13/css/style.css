@@ -142,7 +142,7 @@ body {
   content: "";
   background: url(../img/icons/main-header/menu-catalog.svg);
   position: absolute;
-  top: center;
+  top: 10px;
   left: 20px;
   width: 24px;
   height: 24px;
@@ -242,7 +242,7 @@ body {
 .info__link::before {
   position: absolute;
   content: "";
-  top: center;
+  top: 0;
   left: 0;
   width: 24px;
   height: 24px;
@@ -355,7 +355,7 @@ body {
 .title__sub span::after {
   content: "";
   position: absolute;
-  top: center;
+  top: 0;
   right: 0;
   background: url(../img/goods-popular/icons/arrow.svg);
   width: 24px;
@@ -434,7 +434,7 @@ body {
 .goods-popular__card .card__available::before {
   position: absolute;
   content: "";
-  top: center;
+  top: -2px;
   left: 0;
   background: url(../img/goods-popular/icons/check.svg);
   width: 24px;
