@@ -59,9 +59,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.top-header__container > *:not(:last-child) {
+  margin-right: 30px;
+}
+
 .menu__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .menu__link {
@@ -118,6 +123,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.main-header__container > *:not(:last-child) {
+  margin-right: 15px;
 }
 .main-header__logo {
   width: 250px;
@@ -224,9 +232,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.bottom-header__container > *:not(:last-child) {
+  margin-right: 30px;
+}
 .info__list {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 .info__link {
   padding-left: 34px;
@@ -264,9 +276,13 @@ body {
 
 /***********************************/
 
+.page {
+  margin-top: 70px;
+}
+
 .categories-popular {
   color: #2b2929;
-  margin: 70px 0px;
+  margin-bottom: 70px;
 }
 .categories-popular__title {
   margin-bottom: 40px;
@@ -280,11 +296,11 @@ body {
 .categories-popular__cards {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 250px;
   row-gap: 24px;
   column-gap: 10px;
 }
 .categories-popular__card {
+  flex-basis: 250px;
   overflow: clip;
   position: relative;
   border-radius: 8px;
@@ -314,6 +330,9 @@ body {
   font-weight: 600;
   line-height: 1.4;
 }
+.categories-popular__card .card__info > *:not(:last-child) {
+  margin-right: 10px;
+}
 .categories-popular__card .card__number {
   color: #b1b1b1;
 }
@@ -332,11 +351,13 @@ body {
   color: #2b2929;
   margin-bottom: 80px;
 }
-.goods-popular__title {
-  margin-bottom: 40px;
+.title {
   display: flex;
   gap: 30px;
   align-items: center;
+}
+.goods-popular__title {
+  margin-bottom: 40px;
 }
 .title__sub span {
   padding-right: 34px;
@@ -389,6 +410,7 @@ body {
 }
 .goods-popular__card .card__image {
   width: 260px;
+  min-height: 220px;
   border-radius: 8px;
   transition: all 0.5s;
 }
@@ -401,8 +423,9 @@ body {
 .goods-popular__card .card__info {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  justify-content: center;
   gap: 10px;
+  flex-grow: 1;
 }
 .goods-popular__card .card__size {
   color: #535353;
@@ -479,32 +502,28 @@ body {
 .page__sales {
   padding-bottom: 70px;
 }
-.sales__title {
+.sales__header {
   margin-bottom: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.title__right {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-.arrows {
+.sales__arrows {
   display: flex;
   gap: 20px;
 }
-.arrows a {
+.sales__arrows a {
   border-radius: 50%;
   transition: all 0.3s;
 }
-.arrows a:hover {
+.sales__arrows a:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 5px black;
 }
 .sales__banners {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .sales__banner {
   overflow: clip;
