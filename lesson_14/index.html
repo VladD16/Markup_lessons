@@ -53,8 +53,7 @@
             </div>
             <div class="test__line">
               <label for="input-6" class="test__label">Добавити фото:</label>
-              <input id="input-6" class="test__input--file" multiple accept=".jpg, .png" id="file" name="form[]"
-                type="file">
+              <input id="input-6" class="test__input--file" multiple accept=".jpg, .png" name="form[]" type="file">
             </div>
             <div class="test__line">
               <label for="input-7" class="test__label">Ваш коментар...</label>
@@ -62,7 +61,7 @@
             </div>
             <div class="test__line">
               <label class="test__label" for="input-8">Улюблена марка авто:</label>
-              <select class="test__select" id="input-8" id="input-8" name="form[select]">
+              <select class="test__select" id="input-8" name="form[select]">
                 <option value="01">Audi</option>
                 <option value="02">BMW</option>
                 <option selected value="03">Mercedes</option>
@@ -173,19 +172,18 @@
                     <input checked class="choice__input" name="pay" id="card" value="form[]" type="radio">
                     <label class="choice__box" for="card">
                       <span class="choice__title">Оплата карткою на сайті</span>
-                      <div class="choice__icons">
-                        <img src="img/page__basket/icons/master-card-logo.svg" alt="зображення - логотип мастеркард">
-                        <img src="img/page__basket/icons/visa-card-logo.svg" alt="зображення - логотип віза">
-                      </div>
+                      <img class="choice__icon" src="img/page__basket/icons/master-card-logo.svg"
+                        alt="зображення - логотип мастеркард">
+                      <img class="choice__icon" src="img/page__basket/icons/visa-card-logo.svg"
+                        alt="зображення - логотип віза">
                     </label>
                   </li>
                   <li class="pay-form__choice choice">
                     <input class="choice__input" name="pay" id="privat" value="form[]" type="radio">
                     <label class="choice__box" for="privat">
                       <span class="choice__title">Privat Pay</span>
-                      <div class="choice__icons">
-                        <img src="img/page__basket/icons/privat-pay-logo.svg" alt="зображення - логотип приват">
-                      </div>
+                      <img class="choice__icon" src="img/page__basket/icons/privat-pay-logo.svg"
+                        alt="зображення - логотип приват">
                     </label>
                   </li>
                   <li class="pay-form__choice choice">
@@ -198,19 +196,16 @@
                     <input class="choice__input" name="pay" id="credit-privat" value="form[]" type="radio">
                     <label class="choice__box" for="credit-privat">
                       <span class="choice__title">Оплата частинами ПриватБанк</span>
-                      <div class="choice__icons">
-                        <img src="img/page__basket/icons/privaty-credit-logo.svg"
-                          alt="зображення - логотип оплати частинами">
-                      </div>
+                      <img class="choice__icon" src="img/page__basket/icons/privaty-credit-logo.svg"
+                        alt="зображення - логотип оплати частинами">
                     </label>
                   </li>
                   <li class="pay-form__choice choice">
                     <input class="choice__input" name="pay" id="mono" value="form[]" type="radio">
                     <label class="choice__box" for="mono">
                       <span class="choice__title">Оплата частинами МоноБанк</span>
-                      <div class="choice__icons">
-                        <img src="img/page__basket/icons/mono-bank-logo.svg" alt="зображення - логотип монобанку">
-                      </div>
+                      <img class="choice__icon" src="img/page__basket/icons/mono-bank-logo.svg"
+                        alt="зображення - логотип монобанку">
                     </label>
                   </li>
                 </ul>
