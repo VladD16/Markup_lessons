@@ -430,14 +430,29 @@ body {
   }
 }
 @media (max-width: 400px) {
-  .bottom-header-mobile__search {
-    display: none;
+  .top-header-mobile__container {
+    gap: 10px;
   }
-  .top-header-mobile__contact {
-    display: none;
+  .bottom-header-mobile__container {
+    gap: 10px;
+  }
+  .top-header-mobile__logo {
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .top-header-mobile__logo img {
+    width: 215px;
   }
   .bottom-header-mobile__icons {
     gap: 5px;
+  }
+  .bottom-header-mobile__catalog span::before {
+    display: none;
+  }
+  .bottom-header-mobile__catalog {
+    padding-left: 20px;
   }
 }
 
