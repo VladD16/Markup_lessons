@@ -698,7 +698,7 @@ body {
   background: url(../img/home-page/lightning-left.png) 0 100%/auto no-repeat, url(../img/home-page/lightning-right.png) 100% 100%/auto no-repeat, url(../img/home-page/Image-back-pr.png) 3% 3%/auto no-repeat, url(../img/home-page/Image-back-ae.png) 90% 15%/auto no-repeat;
 }
 .images-home-page__main {
-  width: 376;
+  width: 376px;
   height: 508px;
   z-index: 3;
 }
