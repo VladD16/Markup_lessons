@@ -504,7 +504,7 @@ $hoverColor: #ff6f61;
   }
   &__card {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
   }
   @media (any-hover: hover) {
     &__card:hover .card-page-explore__info {
@@ -698,10 +698,12 @@ $hoverColor: #ff6f61;
     max-width: 312px;
     height: 400px;
     background-color: #ededed;
+    overflow: hidden;
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+      aspect-ratio: 312 / 400;
     }
   }
 
@@ -1106,12 +1108,13 @@ $hoverColor: #ff6f61;
 
   &__card {
     position: relative;
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      aspect-ratio: 200 / 200;
     }
   }
   &__card::before {
