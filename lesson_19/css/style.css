@@ -1479,7 +1479,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    row-gap: 40px;
+    row-gap: 50px;
   }
 }
 .top-footer__about {
@@ -1498,6 +1498,9 @@ body {
   .top-footer__about {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
 }

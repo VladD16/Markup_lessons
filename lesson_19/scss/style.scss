@@ -1207,7 +1207,7 @@ $hoverColor: #ff6f61;
     @media (max-width: 991.98px) {
       flex-direction: column;
       justify-content: center;
-      row-gap: 40px;
+      row-gap: 50px;
     }
   }
 
@@ -1218,7 +1218,7 @@ $hoverColor: #ff6f61;
     gap: 32px;
     @media (max-width: 991.98px) {
       flex-basis: 0;
-
+      align-items: center;
       text-align: center;
     }
   }
