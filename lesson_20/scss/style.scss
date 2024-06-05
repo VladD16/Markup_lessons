@@ -1,0 +1,221 @@
+@use "sass:math";
+
+// Шрифти
+
+// Локальні шрифти
+
+@import "fonts.scss";
+
+// Обнулення
+
+@import "reset.scss";
+
+// Міксіни
+
+@import "_mixins.scss";
+
+///////////////////////////////////////////////////////////////
+// Налаштування адаптивної сітки
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1240;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+/////////////////////////////////////////////////////////////////////
+
+body {
+  font-family: " Satoshi", sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1270px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+///////////////////////////////////////
+
+.page {
+  &__hero {
+  }
+}
+.hero-page {
+  background-color: #f2f0f1;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: toRem(20);
+    @media (max-width: toEm(1210)) {
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__info {
+    flex-basis: toRem(596);
+    padding-top: toRem(103);
+    padding-bottom: toRem(116);
+    @media (max-width: toEm(1210)) {
+      flex-basis: 0;
+      text-align: center;
+      padding-top: toRem(70);
+      padding-bottom: toRem(30);
+    }
+  }
+
+  &__image {
+    flex-basis: toRem(660);
+    flex-shrink: 0;
+    align-self: flex-end;
+    height: toRem(670);
+    max-width: toRem(660);
+    margin-right: toRem(-50);
+    background: url(../img/star.svg) 5% 40% / 8% no-repeat,
+      url(../img/star.svg) 95% 10% / 18% no-repeat;
+    @media (max-width: toEm(1340)) {
+      margin-right: 0;
+    }
+    @media (max-width: toEm(1210)) {
+      flex-basis: 0;
+      flex-shrink: 1;
+      align-self: center;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.info-page-hero {
+  > * {
+    margin-bottom: toRem(32);
+  }
+  &__title {
+    font-family: "Integral CF";
+    font-size: toRem(64);
+    font-weight: 700;
+    text-transform: uppercase;
+    @include adaptiveValue(font-size, 64, 36);
+  }
+
+  &__text {
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.37;
+    @include adaptiveValue(font-size, 16, 14);
+  }
+  &__text p:not(:last-child) {
+    margin-bottom: toRem(15);
+  }
+
+  &__button {
+    padding: toRem(16) toRem(54);
+    border-radius: toRem(62);
+    background-color: #000;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: toRem(63);
+    transition: all 0.3s;
+    @media (max-width: toEm(425)) {
+      display: block;
+      width: 100%;
+      margin-bottom: toRem(30);
+    }
+  }
+  @media (any-hover: hover) {
+    &__button:hover {
+      background-color: #818181;
+    }
+  }
+
+  &__about {
+  }
+  > *:last-child {
+    margin-bottom: toRem(0);
+  }
+}
+.about-hero-page {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: toRem(32);
+    row-gap: toRem(15);
+    @media (max-width: toEm(1310)) {
+      justify-content: center;
+    }
+    @media (max-width: toEm(768)) {
+      column-gap: toRem(22);
+    }
+  }
+  &__item:not(:last-child) {
+    padding-right: toRem(32);
+    border-right: toRem(1) solid rgba(0, 0, 0, 0.1);
+    @media (max-width: toEm(768)) {
+      padding-right: toRem(22);
+    }
+  }
+
+  &__quantity {
+    font-size: toRem(40);
+    font-weight: 700;
+    @include adaptiveValue(font-size, 40, 24);
+  }
+
+  &__title {
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.37;
+    @include adaptiveValue(font-size, 16, 12);
+  }
+}
+
+/////////////////////////////////
+
+.brands-page {
+  background-color: #000;
+  &__container {
+    padding-bottom: toRem(42);
+    padding-top: toRem(42);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: toRem(105);
+    row-gap: toRem(30);
+    @media (max-width: toEm(768)) {
+      column-gap: toRem(50);
+    }
+  }
+
+  &__item {
+    flex-shrink: 0;
+    max-width: toRem(205);
+    max-height: toRem(40);
+  }
+}
