@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 21</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__title">
+          урок №21 (основи JavaScript. Частина №1)
+        </h1>
+      </div>
+    </header>
+    <main class="page">
+      <div class="page__container">
+        <section class="page__tasks">
+          <div class="page__task">
+            <p class="page__question">
+              Задача №1<br>
+              Яка назва змінної правильна:<br>
+              1) let user-name<br>
+              2) let UserName<br>
+              3) let userName
+            </p>
+            <p class="page__answer">
+              Правильна відповідь "3) let userName" - lowerCamelCase!
+            </p>
+          </div>
+          <div class="page__task">
+            <p class="page__question">
+              Задача №2<br>
+              Чи буде помилка при виконанні наступної програми:<br>
+              const userName = 20<br>
+              userName = "Іштван"
+            </p>
+            <p class="page__answer">
+              Так, значення константи неможна змінювати!
+            </p>
+          </div>
+          <div class="page__task">
+            <p class="page__question">
+              Задача №3<br>
+              Що потрапить в консоль?:<br>
+              let numOne = 20<br>
+              let numTwo = "20"<br>
+              let numSumm = numOne + numTwo<br>
+              console.log(numSumm)
+            </p>
+            <p class="page__answer">
+              '2020' - якщо тип данних одної з перемінних 'string' > інша також конвертується в 'string' (тільки
+              оператор "+")
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <script src="js/script.js"></script>
+  </div>
+</body>
+
+</html>
