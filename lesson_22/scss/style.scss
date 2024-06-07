@@ -1,0 +1,144 @@
+@use "sass:math";
+
+// Шрифти
+
+// Локальні шрифти
+
+@import "fonts.scss";
+
+// Обнулення
+
+@import "reset.scss";
+
+// Міксіни
+
+@import "_mixins.scss";
+
+///////////////////////////////////////////////////////////////
+// Налаштування адаптивної сітки
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1240;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+/////////////////////////////////////////////////////////////////////
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  background-color: #e6e6e6;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1270px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+///////////////////////////////////////
+
+.header {
+  &__container {
+    margin-top: toRem(30);
+    margin-bottom: toRem(30);
+    text-align: center;
+  }
+
+  &__title {
+    padding-top: toRem(30);
+    padding-bottom: toRem(30);
+    text-transform: capitalize;
+    font-size: toRem(40);
+    background-color: #134693;
+    border-radius: toRem(40);
+    text-decoration: underline;
+    font-weight: 600;
+    color: #98fc66;
+    @include adaptiveValue(font-size, 40, 25);
+  }
+}
+
+///////////////////////
+
+.page {
+  &__container {
+    padding-top: toRem(30);
+    padding-bottom: toRem(30);
+  }
+
+  &__tasks {
+    padding: toRem(30);
+    background-color: #134693;
+    border-radius: toRem(40);
+  }
+
+  &__task {
+    padding: toRem(30);
+    border-radius: toRem(30);
+    font-size: toRem(30);
+    background-color: #51be1a;
+    @include adaptiveValue(font-size, 30, 18);
+  }
+  &__task:not(:last-child) {
+    margin-bottom: toRem(30);
+  }
+
+  &__question {
+    margin-bottom: toRem(30);
+  }
+
+  &__answer {
+    position: relative;
+    background-color: yellow;
+    padding: toRem(10);
+    text-align: center;
+  }
+  @media (any-hover: hover) {
+    &__answer:hover::after {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  @media (any-hover: none) {
+    &__answer::after {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  &__answer::after {
+    position: absolute;
+    content: "Point at me to see the correct answer!";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: toRem(30);
+    background-color: #c5c5c5;
+    color: rgb(184, 16, 16);
+    transition: all 0.3s;
+  }
+}
