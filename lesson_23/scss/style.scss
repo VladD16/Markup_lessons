@@ -1,0 +1,65 @@
+@use "sass:math";
+
+// Шрифти
+
+// Локальні шрифти
+
+@import "fonts.scss";
+
+// Обнулення
+
+@import "reset.scss";
+
+// Міксіни
+
+@import "_mixins.scss";
+
+///////////////////////////////////////////////////////////////
+// Налаштування адаптивної сітки
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1240;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+/////////////////////////////////////////////////////////////////////
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  background-color: #e6e6e6;
+  line-height: 1.2;
+  font-size: toRem(30);
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1270px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+///////////////////////////////////////
+
+.button {
+  color: red;
+  background-color: #000000;
+}
