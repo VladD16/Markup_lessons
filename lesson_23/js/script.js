@@ -87,7 +87,7 @@ scrollToBlock(button);
 // пофарбувати колір тексту посилання в червоний
 
 const link = document.querySelector(".link");
-
+link.setAttribute("data-width", "100");
 const width = parseFloat(link.dataset.width);
 
 if (width < 200) {
