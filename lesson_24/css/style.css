@@ -218,6 +218,9 @@ p {
   color: #c70000;
   font-weight: 600;
   text-align: center;
+  background-color: yellowgreen;
+  border-radius: 2.5rem;
+  padding: 1.875rem;
 }
 
 .footer {
