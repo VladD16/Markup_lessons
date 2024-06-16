@@ -1,0 +1,161 @@
+@use "sass:math";
+
+// Шрифти
+
+// Локальні шрифти
+
+@import "fonts.scss";
+
+// Обнулення
+
+@import "reset.scss";
+
+// Міксіни
+
+@import "_mixins.scss";
+
+///////////////////////////////////////////////////////////////
+// Налаштування адаптивної сітки
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1240;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+/////////////////////////////////////////////////////////////////////
+
+body {
+  opacity: 0;
+  font-family: "Arial", sans-serif;
+  color: #000;
+  background-color: grey;
+  &.loaded {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1270px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+///////////////////////////////////////
+
+.header {
+  font-size: toRem(40);
+  text-align: center;
+  background-color: #019901;
+  padding-top: toRem(30);
+  padding-bottom: toRem(30);
+}
+
+.block-1 {
+  padding-top: toRem(30);
+  padding-bottom: toRem(30);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item {
+  display: block;
+  font-size: toRem(25);
+  padding: toRem(20) toRem(30);
+  background-color: yellowgreen;
+  border-radius: toRem(20);
+  box-shadow: toRem(0) toRem(0) toRem(10) black;
+  &.active {
+    background-color: rgb(0, 158, 0);
+  }
+}
+.item:not(:last-child) {
+  margin-bottom: toRem(25);
+}
+
+p {
+  font-size: toRem(20);
+  text-align: justify;
+  line-height: 1.3;
+  margin-bottom: toRem(30);
+}
+.test-item {
+  font-size: toRem(40);
+  text-transform: uppercase;
+  margin-bottom: toRem(30);
+  color: #c70000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer {
+  font-size: toRem(40);
+  text-align: center;
+  background-color: #0097b2;
+  padding-top: toRem(30);
+  padding-bottom: toRem(30);
+  transition: background-color 0.3s;
+}
+
+///////////////////////////////////////
+// Практика метеріалу
+
+// .page__container {
+//   padding-top: toRem(30);
+// }
+
+// .button {
+//   font-size: toRem(30);
+//   background-color: #43901d;
+//   color: #000;
+//   &.active {
+//     background-color: yellow;
+//   }
+// }
+// .link {
+//   font-size: toRem(30);
+//   background-color: #43901d;
+//   color: #000;
+//   &.active {
+//     background-color: rgb(0, 234, 255);
+//   }
+// }
+// .circle {
+//   margin-top: toRem(30);
+//   margin-bottom: toRem(30);
+//   width: toRem(200);
+//   height: toRem(200);
+//   border-radius: 50%;
+//   background-color: #43901d;
+//   transform: translate(-120%, 0px);
+//   opacity: 0;
+//   transition: all 1s;
+// }
+// .block.animate .circle {
+//   transform: translate(0px, 0px);
+//   opacity: 1;
+// }
+
+// p {
+//   font-size: toRem(30);
+// }
+
+///////////////////////////////////////
