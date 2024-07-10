@@ -1097,10 +1097,12 @@
   // .actions-body-header__card
 
   &__card {
+    overflow-y: auto;
     position: absolute;
     top: calc(100% + toRem(15));
     right: toRem(15);
     width: toRem(520);
+    min-height: 100%;
     padding: toRem(30);
     border-radius: toRem(8);
     @media (max-width: toEm(991.98)) {
@@ -1276,7 +1278,6 @@
 /////////////////////////////////////////////////////////////
 
 .card-header {
-  overflow-y: auto;
   background: #fff;
   box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
   display: flex;
@@ -1344,6 +1345,15 @@
   &__items {
     overflow-y: auto;
     block-size: calc(100vh - toRem(490));
+    @media (max-width: toEm(991.98)) {
+      block-size: calc(100vh - toRem(415));
+    }
+    @media (max-width: toEm(699.98)) {
+      block-size: calc(100vh - toRem(400));
+    }
+    @media (max-width: toEm(580)) {
+      block-size: calc(100vh - toRem(385));
+    }
   }
 
   // .card-header__item
