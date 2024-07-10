@@ -2388,21 +2388,6 @@ body.loaded {
   overflow-y: auto;
   block-size: calc(100vh - 30.625rem);
 }
-@media (max-width: 61.99875em) {
-  .card-header__items {
-    block-size: calc(100vh - 25.9375rem);
-  }
-}
-@media (max-width: 43.74875em) {
-  .card-header__items {
-    block-size: calc(100vh - 25rem);
-  }
-}
-@media (max-width: 36.25em) {
-  .card-header__items {
-    block-size: calc(100vh - 24.0625rem);
-  }
-}
 .card-header__bottom {
   display: grid;
   gap: 1.25rem;
