@@ -1,26 +1,16 @@
 @use "sass:math";
-
-// Шрифти
-
-// Локальні шрифти
-
-@import "_fonts.scss";
+// ==========================================================
+// Кольори
+@import "_colors.scss";
+// Локальне підключення шрифтів
 @import "_icons.scss";
-
-// Обнулення
-
+@import "_fonts.scss";
+// Скидання стилів
 @import "_reset.scss";
-
 // Міксіни
-
 @import "_mixins.scss";
 
-// Кольори
-
-@import "_colors.scss";
-
-///////////////////////////////////////////////////////////////
-// Налаштування адаптивної сітки
+// Налаштування адаптивної сітки ===============================================================================================================================================================================================================================================================================================
 
 // Мінімальна ширина сторінки
 $minWidth: 320;
@@ -34,43 +24,41 @@ $containerPadding: 30;
 // Ширина спрацьовування першого брейкпоінту
 $containerWidth: $maxWidthContainer + $containerPadding;
 
-/////////////////////////////////////////////////////////////////////
-
-body {
-  font-family: "Proxima Nova", sans-serif;
-  color: $mainColor;
-  background-color: $lightColor;
-  opacity: 0;
-  transition: opacity 0.2s;
-  &.loaded {
-    opacity: 1;
-  }
+// ==========================================================
+html {
 }
-
+body {
+	font-family: "ProximaNova", sans-serif;
+	color: $mainColor;
+	background-color: $lightColor;
+}
 .wrapper {
-  min-height: 100%;
-  overflow: clip;
+	min-height: 100%;
+	overflow: clip;
 
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .wrapper > main {
-  flex-grow: 1;
+	flex-grow: 1;
+	transition: all 0.3s;
+	.cart-open &,
+	.catalog-open & {
+		filter: blur(toRem(2));
+	}
 }
-
+/* ------------------------- */
 [class*="__container"] {
-  max-width: toRem($containerWidth);
-  padding-inline: toRem(15);
-  margin: 0 auto;
+	max-width: toRem($containerWidth);
+	padding-inline: toRem(15);
+	margin: 0 auto;
 }
-
-///////////////////////////////////////
-
+/* ------------------------ */
 // Компоненти
 @import "_common.scss";
-
 // Окремі компоненти
 @import "_header.scss";
 @import "_footer.scss";
 
-///////////////////////////////////////
+// Окремі сторінки
+@import "_home.scss";
