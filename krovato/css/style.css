@@ -848,7 +848,8 @@ body.loaded {
 
 .menu-open,
 .catalog-open,
-.search-open body {
+.search-open,
+.card-open body {
   overflow: hidden;
 }
 
@@ -2312,6 +2313,7 @@ body.loaded {
 }
 
 .card-header {
+  overflow-y: auto;
   background: #fff;
   -webkit-box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
           box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
