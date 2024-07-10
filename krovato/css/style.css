@@ -2073,6 +2073,7 @@ body.loaded {
   top: calc(100% + 0.9375rem);
   right: 0.9375rem;
   width: 32.5rem;
+  height: 33.4375rem;
   padding: 1.875rem;
   border-radius: 0.5rem;
 }
