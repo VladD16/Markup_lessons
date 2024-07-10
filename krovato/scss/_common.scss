@@ -465,4 +465,33 @@
 }
 
 ///////////////////////////
-//
+// Quantity
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  background-color: $lightColor;
+  border: toRem(1) solid $lightGreyColor;
+  border-radius: toRem(8);
+  height: toRem(50);
+  padding-inline: toRem(20);
+  padding-block: toRem(13);
+
+  // .quantity__button
+  &__button {
+    inline-size: toRem(24);
+    block-size: toRem(24);
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: toRem(14);
+  }
+  // .quantity__input
+  &__input {
+    min-width: toRem(30);
+    text-align: center;
+    font-weight: 600;
+    font-size: toRem(20);
+  }
+}

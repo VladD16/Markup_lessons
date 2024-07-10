@@ -18,6 +18,13 @@ function windowLoaded() {
   document.body.classList.add("loaded");
 
   // Події
+  let keypressActions = (e) => {
+    if (e.key === "Escape") {
+      document.documentElement.classList.remove("catalog-open");
+      // ....
+    }
+  };
+
   let documentActions = (e) => {
     const targetElement = e.target;
     const typeEvent = e.type;
@@ -49,6 +56,11 @@ function windowLoaded() {
       e.preventDefault();
     }
 
+    // Відкриття бургер меню
+    if (targetElement.closest(".icon-menu")) {
+      document.documentElement.classList.toggle("menu-open");
+    }
+
     // Відкриття мов в header при кліку
     if (isTouchScreen) {
       if (targetElement.closest(".lang-header-top")) {
@@ -56,6 +68,17 @@ function windowLoaded() {
         langHeader.classList.toggle("--active");
       } else {
         document.querySelector(".lang-header-top").classList.remove("--active");
+      }
+      if (targetElement.closest(".items-catalog-header__arrow-more")) {
+        const targetItem = targetElement.closest(".items-catalog-header__item");
+        // const targetActiveItem = document.querySelector(
+        //   ".items-catalog-header__item.--active"
+        // );
+        targetItem.classList.toggle("--active");
+
+        // if (targetItem !== targetActiveItem) {
+        //   targetActiveItem.classList.remove("--active");
+        // }
       }
     }
 
@@ -77,12 +100,46 @@ function windowLoaded() {
         `${itemsCatalogMenu.getBoundingClientRect().top + 20}px`
       );
       document.documentElement.classList.toggle("catalog-open");
-    } else {
+    } else if (!targetElement.closest(".items-catalog-header")) {
       document.documentElement.classList.remove("catalog-open");
+    }
+
+    // Відкриття пошуку
+    if (targetElement.closest(".search-header__open")) {
+      document.documentElement.classList.toggle("search-open");
+    } else if (!targetElement.closest(".search-header")) {
+      document.documentElement.classList.remove("search-open");
+    }
+
+    // Відкриття корзини
+    if (targetElement.closest(".actions-body-header__item._icon-basket")) {
+      document.documentElement.classList.toggle("card-open");
+    } else if (
+      !targetElement.closest(".card-header") ||
+      targetElement.closest(".card-header__close")
+    ) {
+      document.documentElement.classList.remove("card-open");
+    }
+
+    // Кількість товару
+    if (targetElement.closest(".quantity__button._icon-minus")) {
+      const currentInput = targetElement.closest(
+        ".quantity__button._icon-minus"
+      ).nextElementSibling;
+      currentInput.value =
+        currentInput.value - 1 > 0 ? currentInput.value - 1 : 1;
+      e.preventDefault();
+    } else if (targetElement.closest(".quantity__button._icon-plus")) {
+      const currentInput = targetElement.closest(
+        ".quantity__button._icon-plus"
+      ).previousElementSibling;
+      currentInput.value = ++currentInput.value;
+      e.preventDefault();
     }
   };
 
   document.addEventListener("click", documentActions);
+  document.addEventListener("keydown", keypressActions);
 
   // Прибрати tab для Title при відкритому Footer Spollers
   let spollersInit = (footerSpollers, isOpen) => {
